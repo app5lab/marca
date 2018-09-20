@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>Marca</ion-title>
+    <ion-buttons end>
+      <button ion-button light>
+        <ion-icon name="search" style="font-size: 24px"></ion-icon>
+      </button>
+      <button ion-button light>
+        <ion-icon name="cart" style="font-size: 24px"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+
+  <ion-card class="slider">
+    <ion-slides autoplay="3000" pager>
+      <ion-slide *ngFor="let number of [1,2,3]">
+        <img style="height: 200px; width: 100%" no-repeat src="assets/imgs/slider/{{number}}.jpg">
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+  <!--blank div using as line-->
+  <div class="line">
+  </div>
+  <!--blank div using as line-->
+
+
+  <h1 text-center style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+    <b>All in the
+      <br> Details</b>
+  </h1>
+  <ion-card>
+    <img src="assets/imgs/home/1t.jpg">
+    <ion-card-content>
+      <p text-center>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+    </ion-card-content>
+  </ion-card>
+  <!--blank div using as line-->
+  <div class="line">
+  </div>
+  <!--blank div using as line-->
+
+  <h1 text-center>what are you looking for?</h1>
+<!-- ab ye deakh. loop lagaen gy is me.  han pata h ngfor wali nayup. tuje to sb ata hai :Px xD.. yr hmne pehle to kaha k list pr loop lagao. list banaya hmne ts file me.ab yahan jb bi list me kuch bi ae ga to wo udher aa jae ga. phr hmne 1 index le lia. awein :P set hai :Pkbi kbi kam aa jata hai. lekn yahn fazul hi hai GG GG GGliplt variably bi use ho jate hain ACha ... wo na design karlay homepage :| xDgroup me deakh hi le gi.use ts files pr lagata hun. tu UI kr waah bc usay Ts bhi sikha deya harami wtF ! lol. chal phr pura home tu hi kr le. ts bi. pages alag kr lete hain kese hongay    kahan gaye ?
+items hai nai kuch abi lekn. variable k liye aise likhte.lol -->
+  <ion-list>
+    <button *ngFor="let item of list;let index" text-center ion-item>{{item}} with index {{index}}</button>
+    
+  </ion-list>
+
+  <!--blank div using as line-->
+  <div class="line">
+  </div>
+  <!--blank div using as line-->
+  <p text-center>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+  <button ion-button full color="dark">FEATURED DESIGNERS</button>
+
+  <div class="line"></div>
+  <!--blank div using as line-->
+  <p text-center>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+
+
+
+</ion-content>
