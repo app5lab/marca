@@ -1,0 +1,58 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>products</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="body">
+  <!--left side products-->
+  <div>
+     <div float-left style="max-width: 45%">
+ <ion-card class="products1" float-left>
+    <ion-slides pager>
+        <ion-slide *ngFor="let number of [1,2,3]">
+            <img class="img" style="height: 180px; width: 100%" no-repeat src="assets/imgs/product/{{number}}.jpg">
+          </ion-slide>  
+    </ion-slides>
+    <ion-card-content>
+      <h6 text-center style="font-size: 18px; margin-top: -15px">Jacket</h6>
+      
+      <p text-center style="margin-top: -5px">Lorem Ispum</p>
+      <h6 text-center style="margin-top: -5px">$1,095.00</h6>
+    
+    </ion-card-content>
+  
+ </ion-card>
+
+</div>
+ 
+  <!--left side products-->
+
+<!--right side products-->
+<div float-right style="max-width: 45%">
+<ion-card class="products2">
+    <ion-slides pager>
+        <ion-slide *ngFor="let number of [1,2,3]">
+            <img class="img" style="height: 180px; width: 100%" no-repeat src="assets/imgs/product/{{number}}.jpg">
+          </ion-slide>  
+    </ion-slides>
+    <ion-card-content>
+      <h6 text-center style="font-size: 18px; margin-top: -15px">Jacket</h6>
+      
+      <p text-center style="margin-top: -5px">Lorem Ispum</p>
+      <h6 text-center style="margin-top: -5px">$1,095.00</h6>
+    
+    </ion-card-content>
+  
+ </ion-card>
+</div>
+</div>
+<!--right side products-->
+</ion-content>
+<ion-footer class="footer">
+    <button id="footerbtn">Refine</button>
+    </ion-footer>

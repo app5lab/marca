@@ -1,0 +1,63 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>product-details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="body">
+    <ion-slides pager class="slide">
+        <ion-slide *ngFor="let number of [1,2,3]">
+          <img src="assets/imgs/product/{{number}}.jpg" class="slideimg">
+        </ion-slide>
+      </ion-slides>
+
+<div class="details">
+  <h6 text-center margin-top="1px">Jacket</h6>
+  <!--blank div using as line-->
+  <div class="line">
+    </div>
+    <!--blank div using as line-->
+  <p text-center>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+
+
+      <ion-list>
+          <ion-item style="max-width: 60%; background-color: transparent; color: red" float-left>
+            <ion-label style="color: red">Size</ion-label>
+            <ion-select [(ngModel)]="Size">
+              <ion-option value="Small">Small</ion-option>
+              <ion-option value="Medium">Medium</ion-option>
+              <ion-option value="Large">Large</ion-option>
+              <ion-option value="XL">XL</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+
+        <ion-item style="max-width:40%; background-color: transparent" float-right>
+            <h4>Price :</h4>
+            <h6 item-end>135$</h6>
+          </ion-item>
+          </div>
+          <!--Description-->
+              
+            <div>
+              <h6><u>DESCRIPTION</u></h6>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+          
+            <!--Description-->
+     <!--blank div using as line-->
+  <div class="line">
+    </div>
+    <!--blank div using as line-->
+
+   
+      
+</ion-content>
+<ion-footer class="footer">
+  <button (click)='add()' id="footerbtn">Add to bag</button>
+  </ion-footer>
+

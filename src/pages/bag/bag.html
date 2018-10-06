@@ -1,0 +1,61 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Shopping bag</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="body">
+  <div>
+    <img src="assets/imgs/product/1.jpg" class="img" float-left margin-right="1px">
+    <div>
+   <h6>Description</h6>
+   <p text-left>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+   <h5>Price</h5>
+   <button float-right style="background-color: transparent; color: red">Remove</button>
+   <ion-item style="width: 30%; background-color: transparent" (click)="qty()">
+     <ion-label style="color:black">Qty</ion-label>
+     <ion-input disabled type="number"></ion-input>
+   </ion-item>
+
+   
+   
+
+  <!--blank div using as line-->
+  <div class="line">
+    </div>
+    <!--blank div using as line-->
+
+  </div>
+  <h6>PROMOTION CODE</h6>
+  <ion-item>
+    <ion-input placeholder="Promotion code" type="text"></ion-input>
+    <button ion-button clear style="border: 1px solid grey; color: gray" item-end>Apply</button>
+  </ion-item>
+<ion-list>
+  <ion-item style="background-color: whitesmoke">
+    <p>SHIPPING & HANDLING</p>
+    <p item-end>FREE</p>
+  </ion-item>
+  <ion-item style="background-color: whitesmoke">
+      <h6>SUBTOTAL</h6>
+      <p item-end>TOTAL $</p>
+    </ion-item>
+</ion-list>
+
+<!--blank div using as line-->
+<div class="line">
+  </div>
+  <!--blank div using as line-->
+
+  <button ion-button clear full style="color: black">QUESTIONS? CONTACT CUSTOMER SERVICE</button>
+
+  </div>
+
+</ion-content>
+<ion-footer class="footer">
+    <button id="footerbtn">Checkout</button>
+    </ion-footer>

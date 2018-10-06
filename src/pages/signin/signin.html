@@ -1,0 +1,49 @@
+<ion-content padding class="body">
+    <ion-title text-center class="marca"><h1>Marca</h1></ion-title>
+    <!--Line-->
+    <div class="line">
+      </div>
+      <!--Line-->
+      <h4>SIGN IN</h4>
+      <div class="forgotpwd"><a style="color: #BE5504">Forgot password?</a></div>
+      <!--sign in inputs-->
+      <ion-list style="background-color: whitesmoke">
+        <ion-item>
+            <ion-label><ion-icon name="people" style="color: #BE5504"></ion-icon></ion-label>
+          <ion-input type="text" placeholder="Email"></ion-input>
+          <ion-item options></ion-item>
+        </ion-item>
+        <ion-item>
+            <ion-label><ion-icon name="key" style="color: #BE5504"></ion-icon></ion-label>
+            <ion-input [type]="PasswordType" placeholder="Marca password"></ion-input>
+           <ion-icon (click)="togglePassword()" name="eye" style="color: black" item-end></ion-icon>
+          </ion-item>
+      </ion-list>
+      <!--sign in inputs-->
+      
+      <!--Checkbox-->
+      
+        <ion-item style="background-color: transparent">
+            <ion-label style="color: grey">Keep me signed in. </ion-label>
+            <ion-checkbox color="dark" checked="false"></ion-checkbox>
+          </ion-item>
+        
+      <!--Checkbox-->
+
+      <!--sign in button-->
+      <button ion-button full style="background-color: #BE5504;border-radius: 5px; margin-top: 20px">Sign in</button>
+      <!--sign in button-->
+      <p text-center style="color: grey">More sign in options</p>
+
+      <!--facebook button-->
+      <div class="fbbutton"><button ion-button medium round style="background-color:#3B5998; border-radius: 5px"><ion-icon name="logo-facebook" padding-right="2px"></ion-icon>Login via facebook</button></div>
+      <!--facebook button-->
+
+      <!--Create Account button-->
+        <p text-center style="color: grey">New to Marca?</p>
+        <button ion-button round full color="dark" style="border-radius: 5px">Create Account</button>
+         <!--Create Account button-->
+      <div class="contactus"><a style="color: #BE5504">Contact us</a></div>
+
+      <p text-center style="color: grey">© 2011 John Doe All Rights Reserved</p>
+</ion-content>

@@ -1,0 +1,44 @@
+page-product-details {
+    .body{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+        margin: 0 auto;
+        background-color: whitesmoke;
+    } 
+    .slide{
+        height: 60%;
+    }
+.slideimg{
+    max-width: 60vw !important;
+
+    max-height: 60vh !important;
+}
+.footer{
+    background-color: #BE5504;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+.details{
+    margin: 0 !important;
+    padding: 0 !important
+}
+.line
+{
+    height: 2px;
+    background-color: #BE5504;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    margin-left: 30px;
+     
+}
+
+#footerbtn{
+font-size: 18px;
+background-color: transparent;
+color: white;
+width: 100%;
+height: 100%;
+
+}
+}
